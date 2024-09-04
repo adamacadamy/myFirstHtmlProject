@@ -4,6 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Pge</title>
+    <!-- 
+        css colors can be applied in two ways
+        either by name or by hex code and rgb code
+            1. name e.g. red, blue, green, yellow, brown, black, white, pink, purple, orange, grey, cyan, magenta
+            2. hex code e.g. #ff0000, #00ff00, #0000ff, #ffff00, #ff00ff, #00ffff, #000000, #ffffff
+            3. rgb code e.g. rgb(255,0,0), rgb(0,255,0), rgb(0,0,255), rgb(255,255,0), rgb(255,0,255), rgb(0,255,255), rgb(0,0,0), rgb(255,255,255)
+        -->
+        <!-- 
+        style sheets can be applied in three ways
+        1. inline style
+        2. internal style
+        3. external style
+     
+    css selectors are of three types
+        1. element selector/ tag selector
+        2. id selector
+        3. class selector
+        id overwrites class and class overwrites element
+    
+    selector can be
+        1. element selector [h2]
+        2. id selector [#h2-different]
+        3. class selector [.shiny]
+        [selector]{
+          style: vale 
+          ...;.
+        }
+    -->
+    <style>
+        h2{
+            color: #327532;
+            font-size: 40px;
+        }
+        .shiny{
+            color: #00798C;
+            font-size: 40px;
+        }
+        #h2-different{
+            color: blue;
+            font-size: 40px;
+        }
+        #h2-more-different{
+            color: rgb(80, 8, 31);
+            font-size: 40px;
+        }
+    </style>
 </head>
 <body>
     <!-- 
@@ -49,9 +95,45 @@
             <wbr />
       
     -->
+    <!--
+        css = cascading style sheet
+        it is used to style the webpage
+        text styles are:-
+        1. font-size
+        2. font-family
+        3. font-weight
+        4. font-style
+        5. text-align
+        6. text-decoration
+        7. text-transform
+        8. text-indent
+        9. line-height
+        10. letter-spacing
+        11. word-spacing
+        12. color 
+        13. background-color
+        14. background-image
+        15. background-repeat
+        16. background-position
+     -->
     <section>
-        <h1>Hello World #h1 </h1>
-        <h2>Hello World #h2 </h2>
+ 
+        <h1 
+        style="color:#c639a3; font-size:40px"
+        
+        >Hello World #h1 </h1>
+        <h2>Hello World #h2 one </h2>
+        <!-- 
+         id naming convention
+            1. id should start with a letter [a-z A-Z]
+            2. id can contain letters [a-z A-Z], numbers [0-9], hyphen [-], underscore [_]
+            3. id should not contain spaces
+        -->
+        <h2 id="h2-different">Hello World #h2 two </h2>
+        <h2>Hello World #h2 three </h2>
+        <h2 class="shiny" id="h2-more-different">Hello World #h2 four </h2>
+        <h2 class="shiny">Hello World #h2 five </h2>
+        <h2 class="shiny">Hello World #h2 six </h2>
         <h3>Hello World #h3 </h3>
         <h4>Hello World #h4 </h4>
         <h5>Hello World #h5 </h5>
