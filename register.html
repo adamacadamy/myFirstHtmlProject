@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+  </head>
+  <body>
+    <section>
+      <form action="register_proc.html" method="post">
+        <!-- 
+                form 
+                    action = where to send the form data
+                    method = how to send the form data
+                        post = send data in the background
+                        get = send data in the url
+                label = text for form element
+                input = form element
+                    type = type of input
+                        text = text input
+                        password = password input
+                        number = number input
+                        date = date input
+                        email = email input
+                        radio = radio button
+                        checkbox = checkbox
+                        submit = submit button alternative to button
+                        reset = reset button alternative to button
+                    name = name of input
+                    id = id of input
+                    value = value of input
+            -->
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required />
+        <!-- output  username='string' -->
+        <br />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required />
+        <!-- output password='****' -->
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+        <!-- output email='string' # email format -->
+        <br />
+        <br />
+        <label for="phone">Phone:</label>
+        <input type="number" name="phone" id="phone" required />
+        <!-- output phone='number' -->
+        <br />
+        <br />
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob" required />
+        <!-- output dob='yyyy-mm-dd' # in different date formats -->
+        <br />
+        <br />
+        
+        <label for="gender">Gender:</label>
+        <div id="gender">
+            <input type="radio" name="gender" value="male" checked/> Male
+            <input type="radio" name="gender" value="female" /> Female
+            <!-- 
+                output gender= 'male' || 'female' [checked]
+            -->
+        </div>
+        <br />
+        <br />
+        <label for="hobbies">Hobbies:</label>
+        <div id="hobbies">
+            <input type="checkbox" name="hobbies" value="reading" /> Reading
+            <input type="checkbox" name="hobbies" value="writing" /> Writing
+            <input type="checkbox" name="hobbies" value="coding" checked/> Coding
+            <!-- 
+                output hobbies= 'reading' | 'writing' | 'coding' [checked]
+            -->
+
+        </div>
+        <br />
+        <br />
+        <label for="country">Country:</label>
+     
+            <select name="country" id="country">
+                <option value="nigeria">Nigeria</option>
+                <option value="ghana">Ghana</option>
+                <option value="kenya">Kenya</option>
+                <option value="togo">Togo</option>
+            </select>
+            <!-- output country='nigeria' || 'ghana' || 'kenya' || 'togo' -->
+        <br />
+        <br />
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </form>
+    </section>
+  </body>
+</html>
